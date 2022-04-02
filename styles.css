@@ -467,14 +467,14 @@ a:last-child {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    height: 50rem;
   }
   .safety .car3 {
-    width: 100%;
-    height: 100%;
     flex: 1;
   }
   .safety .safe_desc {
     margin-top: 0;
+    flex: 1;
   }
   .performance_desc {
     flex-direction: column;
