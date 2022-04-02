@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+body {
+  font-family: 'Raleway', Verdana, Tahoma, sans-serif;
+  background-color: white;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  font-weight: 700;
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+  min-height: 100vh;
+  flex-direction: column;
+  background: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/d0cecbbf-1a20-4b48-b136-fb096af19515/bvlatuR/std/2880x1800/model-3-main-hero-a-desktop')
+    no-repeat center center/cover;
+}
+
+.innerheader {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 3.4rem;
+  margin: 0 30px;
+  width: 93%;
+  margin: 0 auto;
+}
+.innerheader h1.logo {
+}
+.innerheader .hideit {
+  display: none;
+}
+.innerheader nav {
+  position: relative;
+}
+
+.innerheader nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  cursor: pointer;
+  transition: all ease-in-out 1s;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.innerheader nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+nav a:nth-child(1):hover ~ .animation {
+  width: 80px;
+  left: 15;
+}
+
+nav a:nth-child(2):hover ~ .animation {
+  width: 80px;
+  left: 90px;
+}
+
+nav .start-home,
+a:nth-child(3):hover ~ .animation {
+  width: 80px;
+  left: 180px;
+}
+
+nav .start-home,
+a:nth-child(4):hover ~ .animation {
+  width: 80px;
+  left: 270px;
+}
+
+nav .start-home,
+a:nth-child(5):hover ~ .animation {
+  width: 90px;
+  left: 360px;
+}
+
+nav .start-home,
+a:nth-child(6):hover ~ .animation {
+  width: 110px;
+  left: 460px;
+}
+nav .start-home,
+a:nth-child(7):hover ~ .animation {
+  width: 110px;
+  left: 480px;
+}
+nav .start-home,
+a:nth-child(8):hover ~ .animation {
+  width: 110px;
+  left: 500px;
+}
+nav .start-home,
+a:nth-child(9):hover ~ .animation {
+  width: 110;
+  left: 520px;
+}
+nav .start-home,
+a:nth-child(10):hover ~ .animation {
+  width: 60px;
+  left: 670px;
+}
+nav .start-home,
+a:nth-child(11):hover ~ .animation {
+  width: 90px;
+  left: 730px;
+}
+nav .start-home,
+a:nth-child(12):hover ~ .animation {
+  width: 50px;
+  left: 840px;
+}
+a:last-child {
+  padding-right: 0;
+}
+
+.tds-site-logo-icon {
+  color: white;
+}
+
+.tds-icon-logo-wordmark {
+  inline-size: 80;
+}
+.tds-icon {
+  background: transparent;
+  block-size: 12px;
+  content: '';
+  display: block;
+  inline-size: 1;
+  max-inline-size: 100%;
+  min-block-size: 12px;
+  min-inline-size: 12px;
+  overflow: hidden;
+  text-indent: -9999px;
+  transition: color 0.33s ease;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  transform: translateY(-15px);
+  transition: all 0.5s ease;
+}
+.animated {
+  transform: translateY(15px);
+}
+
+.stats {
+  margin-top: 100px;
+  font-weight: 400;
+}
+
+.counters {
+  font-weight: 400;
+  width: 40rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.counters h2 {
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 2rem;
+}
+.counters p {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 25px;
+  border: 3px solid white;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+.btn.invert:hover {
+  background-color: black;
+  color: white !important;
+}
+.timeline {
+  position: fixed;
+  top: 30%;
+  left: 12px;
+}
+.timeline ul {
+  list-style: none;
+}
+.timeline li a {
+  display: block;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 7px;
+  width: 5px;
+  height: 25px;
+  margin-top: 10px;
+  border-left: 2px solid gray;
+}
+.timeline li:nth-child(1) a:hover::after {
+  content: 'MODEL3';
+}
+.timeline li:nth-child(2) a:hover::after {
+  content: 'SAFETY';
+}
+.timeline li:nth-child(3) a:hover::after {
+  content: 'PERFORMANCE';
+}
+.timeline li a:active {
+  border-left: 3px solid white;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+/* Demo Purpose Only*/
+.demo {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+}
+/*------------------------------------------------------------------------*/
+.safety {
+  height: 94vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 92%;
+  margin-left: 3rem;
+  font-weight: 400;
+}
+.safety .car3 {
+  position: relative;
+  background: url('images/model3hero.jpg') no-repeat center center/cover;
+  flex: 3;
+  width: 100%;
+  height: 100%;
+  background-size: 99%;
+}
+.safety .car3 .impact-protection {
+  height: 25%;
+  width: 100%;
+  border-left: #000 3px solid;
+  position: absolute;
+  left: 30%;
+  top: 25%;
+}
+.safety .car3 .rgid-structure {
+  height: 15%;
+  width: 100%;
+  border-left: #000 3px solid;
+  position: absolute;
+  left: 50%;
+  top: 17%;
+}
+.safety .car3 .very-low-rollover-risk {
+  height: 18%;
+  width: 100%;
+  border-left: #000 3px solid;
+  position: absolute;
+  left: 53%;
+  top: 60%;
+}
+.text {
+  position: absolute;
+  left: 0px;
+  top: -10px;
+}
+.withcircle:after {
+  content: '';
+  width: 3px;
+  height: 3px;
+  border: black solid 2px;
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 50%;
+  background-color: white;
+}
+.withcircle:last-child:after {
+  bottom: auto;
+  top: -5px;
+}
+.safety .safe_desc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  color: gray;
+  margin-top: 6rem;
+}
+.learnmore-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  /* flex-wrap: nowrap; */
+}
+.performance {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.stats-mountains {
+  background: url('images/lhd-performance-hero.jpg') no-repeat center
+    center/cover;
+  height: 100%;
+  width: 100%;
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  text-align: center;
+}
+.stats-mountains h2 {
+  font-size: 2rem;
+}
+.stats-mountains p {
+  line-height: 1.2rem;
+}
+.flexit {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.performance_desc {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  line-height: 1.2rem;
+  padding-top: 3rem;
+}
+.right-per {
+  padding-left: 3rem;
+}
+.right-per {
+  color: gray;
+  font-weight: 400;
+  font-size: medium;
+}
+
+@media screen and (max-width: 1112px) {
+  .innerheader nav {
+    display: none;
+  }
+  .innerheader .hideit {
+    display: block;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+  }
+  .safety {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .safety .car3 {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+  }
+  .safety .safe_desc {
+    margin-top: 0;
+  }
+  .performance_desc {
+    flex-direction: column;
+  }
+  .counters {
+    width: 30rem;
+  }
+  div .flexit p {
+    display: none;
+  }
+  div .speed.flexit:after {
+    content: '0-60 mph';
+  }
+  div .twolines.flexit:after {
+    content: 'Top Speed';
+  }
+  div .awd.flexit:after {
+    content: 'Dual Motor';
+  }
+  .stats-mountains {
+    height: 120%;
+  }
+}
